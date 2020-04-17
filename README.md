@@ -1,24 +1,22 @@
-# README
+# Dockerized RoR application
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+[![Build Status](https://travis-ci.org/markkorput/pyevento.svg)](https://travis-ci.org/markkorput/ror_docker_auth.svg)
 
-Things you may want to cover:
+# Start Servers
 
-* Ruby version
+***Start postgresql db and rails app docker containers***
+```bash
+docker-compose up [--build]
+```
 
-* System dependencies
+***Create DB***
+```bash
+docker-compose exec app rails db:create
+```
 
-* Configuration
+# Stop Servers
 
-* Database creation
+```bash
+docker-compose down
+```
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
