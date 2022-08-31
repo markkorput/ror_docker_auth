@@ -69,5 +69,5 @@ group :test , :development do
   gem 'foreman'
 end
 
-gem 'omniauth', '~> 1.8.1'
+gem 'omniauth', '~> 1.9.2'
 gem 'omniauth-auth0', '~> 2.0.0'
